@@ -1,5 +1,5 @@
-from Rlst.Speech_recognition.app.celery_app import celery
-from Rlst.Speech_recognition.app.services.speech_service import translate_audio
+from app.celery_app import celery
+from app.services.speech_service import translate_audio
 import os
 
 @celery.task

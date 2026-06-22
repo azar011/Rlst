@@ -3,7 +3,7 @@ from app.tasks import translate_task
 import uuid
 import os
 from celery.result import AsyncResult
-from Rlst.Speech_recognition.app.celery_app import celery
+from app.celery_app import celery
 
 MAX_SIZE = 30 * 1024 * 1024  # 30MB
 

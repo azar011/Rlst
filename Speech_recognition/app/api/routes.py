@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException, UploadFile, File 
-from Rlst.Speech_recognition.app.tasks import translate_task
+from app.tasks import translate_task
 import uuid
 import os
 from celery.result import AsyncResult

@@ -12,4 +12,18 @@ pip install -r requirements.txt
 python app.py
 celery -A app.tasks worker --pool=threads --concurrency=2 --loglevel=info
 
+=========================================================================================
+On Ubuntu 
 
+Install Reddis :-
+sudo apt update
+sudo apt install redis-server -y
+
+Start :-
+sudo systemctl start redis-server
+sudo systemctl enable redis-server
+
+Check :-
+redis-cli ping
+
+after, status check : systemctl status redis-server
